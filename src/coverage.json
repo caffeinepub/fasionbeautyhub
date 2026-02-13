@@ -1,0 +1,56 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-13T09:29:11.510Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 2,
+    "implemented": 1,
+    "items": [
+      {
+        "id": "REQ-14",
+        "summary": "Make the site load with a white/light background by default (not a black/dark background), regardless of the user’s OS/system color scheme, while keeping the existing white + pink aesthetic intact.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/hooks/useTheme.ts",
+          "frontend/index.html",
+          "frontend/src/index.css"
+        ],
+        "matchedFiles": [
+          "frontend/src/hooks/useTheme.ts",
+          "frontend/index.html"
+        ]
+      },
+      {
+        "id": "REQ-15",
+        "summary": "Audit and remove/replace any hard-coded dark/black background classes in homepage components so that light mode consistently uses the Tailwind theme tokens (e.g., bg-background, bg-card, muted variants) rather than black/dark colors.",
+        "status": "missing",
+        "plannedFiles": [
+          "frontend/src/App.tsx",
+          "frontend/src/components/Header.tsx",
+          "frontend/src/components/Hero.tsx",
+          "frontend/src/components/Categories.tsx",
+          "frontend/src/components/TrendingSection.tsx",
+          "frontend/src/components/Newsletter.tsx",
+          "frontend/src/components/Footer.tsx"
+        ],
+        "matchedFiles": []
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/index.html",
+    "frontend/src/hooks/useTheme.ts",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

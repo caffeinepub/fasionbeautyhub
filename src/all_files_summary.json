@@ -1,0 +1,22 @@
+{
+  "backend/main.mo": "Empty Motoko actor with no implemented logic.",
+  "feature_evidence.json": "Metadata describing a feature request to force light theme by default and listing related files, components, and tests.",
+  "frontend-file-summaries.txt": "JSON-style mapping of frontend file paths to human-written summaries of their roles in the app.",
+  "frontend/index.css": "Tailwind-based global stylesheet defining OKLCH color variables for light/dark themes and applying base styles.",
+  "frontend/index.html": "HTML entry point with a pre-hydration script that applies the stored or default light theme before React loads.",
+  "frontend/src/App.tsx": "Main React app component setting the page title and rendering the full layout including header, sections, and footer.",
+  "frontend/src/components/Categories.tsx": "Renders a grid of five styled fashion and beauty categories with icons, gradients, and hover effects.",
+  "frontend/src/components/Footer.tsx": "Footer with brand info, social links, navigation lists, and dynamic year/app identifier support.",
+  "frontend/src/components/Header.tsx": "Sticky header with brand, navigation, theme toggle, action icons, and a mobile menu drawer.",
+  "frontend/src/components/Hero.tsx": "Hero section with a gradient background, overlay image, animated text, and call-to-action buttons.",
+  "frontend/src/components/Newsletter.tsx": "Newsletter sign-up section featuring an email input, subscribe button, and styled gradient card.",
+  "frontend/src/components/TrendingSection.tsx": "Renders a grid of trending fashion and beauty products with images, badges, and styling effects.",
+  "frontend/src/hooks/useActor.ts": "Creates and manages a backend actor based on the current identity, refetching queries when the actor changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides Internet Identity authentication context, handling login, stored identities, and status tracking.",
+  "frontend/src/hooks/useQueries.ts": "Defines a placeholder example query that waits for an actor before running backend calls.",
+  "frontend/src/hooks/useTheme.ts": "Manages light, dark, and system themes with persistence and automatic OS preference updates.",
+  "frontend/src/index.css": "Defines Tailwind base styles and a pink-themed design system with light/dark mode variables and utilities.",
+  "frontend/src/main.tsx": "Bootstraps the app with React, wrapping it in QueryClientProvider and InternetIdentityProvider.",
+  "frontend/tailwind.config.js": "Configures Tailwind with custom colors, fonts, containers, and animations using CSS variables.",
+  "project_state.json": "Describes the current state of the fasionbeautyhub project, including its shift to fashion/beauty content and a white–pink design palette. Lists architectural notes, existing features, and evolving homepage redesign requirements."
+}

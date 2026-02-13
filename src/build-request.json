@@ -1,0 +1,66 @@
+{
+  "kind": "build_request",
+  "title": "Ensure white (non-black) background by default across the site",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-14",
+      "text": "Make the site load with a white/light background by default (not a black/dark background), regardless of the user’s OS/system color scheme, while keeping the existing white + pink aesthetic intact.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Don't use black background I want white background to look more asthetic"
+        ]
+      },
+      "acceptanceCriteria": [
+        "On a fresh visit (no existing theme in localStorage), the homepage background renders as a light/white theme even if the device OS is set to dark mode.",
+        "The top-level page background and all main sections (Header, Hero, Categories, Trending, Newsletter, Footer) do not render with a black/near-black background in the default theme.",
+        "The theme preference persists as before (if a user explicitly toggles theme, that preference is respected on reload).",
+        "No user-facing text is changed away from English as part of this update."
+      ]
+    },
+    {
+      "id": "REQ-15",
+      "text": "Audit and remove/replace any hard-coded dark/black background classes in homepage components so that light mode consistently uses the Tailwind theme tokens (e.g., bg-background, bg-card, muted variants) rather than black/dark colors.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Don't use black background I want white background to look more asthetic"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A code search finds no use of hard-coded black/dark background utility classes (e.g., bg-black, bg-zinc-900, bg-neutral-950) in the homepage components that would affect the default (light) appearance.",
+        "Light mode backgrounds across the homepage visually read as white with soft pink accents, consistent with the existing CSS variable theme tokens."
+      ]
+    }
+  ],
+  "constraints": [
+    "Keep all user-facing text in English.",
+    "Do not edit files under frontend/src/components/ui (compose them instead).",
+    "Do not edit any frontend immutable paths listed in SYSTEM_CONTEXT."
+  ],
+  "nonGoals": [
+    "Removing the dark mode feature entirely.",
+    "Changing homepage content, product lists, or branding beyond what is necessary to ensure the default background is white/light."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

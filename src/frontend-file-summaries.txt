@@ -1,0 +1,14 @@
+{
+  "frontend/src/App.tsx": "Main application component that sets the document title to \"fasionbeautyhub - Trending Fashion & Beauty Deals\" and renders the complete page layout with header, hero, categories, trending section, newsletter, and footer.",
+  "frontend/src/components/Header.tsx": "Sticky header component displaying the \"fasionbeautyhub\" brand with fashion and beauty-themed navigation menu (Streetwear, Dresses, Makeup, Best Sellers, Deals), dark mode toggle, search, wishlist, and shopping bag icons, plus responsive mobile menu.",
+  "frontend/src/components/Hero.tsx": "Hero section with gradient background, makeup-themed hero image overlay, large heading showcasing fashion and beauty style transformation message with gradient text effect, descriptive text, and glowing call-to-action buttons with fast animations.",
+  "frontend/src/components/Categories.tsx": "Category grid section displaying five main categories (Streetwear, Dresses, Makeup, Accessories, Shoes & Bags) with icons, pink-toned gradient backgrounds, and fast hover effects.",
+  "frontend/src/components/TrendingSection.tsx": "Trending fashion and beauty showcase with six featured products (sneakers, denim jacket, lipstick set, foundation, sunglasses, watch) displaying local images, pink star ratings, urgency badges with \"Limited Stock!\" text, prices, and glowing Amazon CTA buttons with fast hover interactions.",
+  "frontend/src/components/Newsletter.tsx": "Newsletter subscription section for fashion and beauty drops with email input, glowing subscribe button, and gradient background card.",
+  "frontend/src/components/Footer.tsx": "Complete footer with fasionbeautyhub brand identity, social media links, fashion and beauty-themed navigation columns, and attribution including \"Built with love using caffeine.ai\" with UTM tracking.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks file with example structure for future backend integration.",
+  "frontend/src/index.css": "Global styles with OKLCH color system featuring white and pink palette for fashion and beauty theme, Poppins sans-serif font, glowing button utilities, fast animation keyframes, and both light and dark mode support with light mode as the default.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with Poppins font family, glow shadow utilities, and complete color token system for the modern kitchen gadgets aesthetic.",
+  "frontend/src/hooks/useTheme.ts": "Custom React hook that manages theme state (light/dark/system), now defaulting to 'light' instead of 'system', persists preference to localStorage, and applies the dark class to the document root element.",
+  "frontend/index.html": "HTML entry point with pre-hydration theme initialization script that applies the stored theme (defaulting to 'light') before React loads to prevent flash of incorrect theme."
+}

@@ -1,0 +1,24 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-make-the-site-load-with-a-white-light-background-by-default-not-a-black-dark-background-regardless-of-the-user-s-os-system-color-scheme-while-keeping-the-existing-white-pink-aesthetic-intact",
+      "featureTitle": "Make the site load with a white/light background by default (not a black/dark background), regardless of the user’s OS/system color scheme, while keeping the existing white + pink aesthetic intact.",
+      "files": [
+        "frontend/index.html",
+        "frontend/src/hooks/useTheme.ts"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-14"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 11,
+  "summary": "Website project \"fasionbeautyhub\" with a planned modern, high-converting homepage redesign; scope now includes beauty/makeup content alongside fashion/clothes, and the visual theme should shift to a white + pink palette (replacing black).",
+  "architectural_notes": [
+    "Potential scope/niche mismatch: project name/theme is fashion/beauty hub, but requested homepage content/images target kitchen gadgets Amazon affiliate niche.",
+    "Scope direction change requested: replace prior kitchen-gadgets/kitchenhub-oriented homepage content with fashion & clothes content to match the fasionbeautyhub brand.",
+    "Scope expansion: include beauty/makeup content alongside fashion/clothes for fasionbeautyhub homepage.",
+    "Design direction update: switch primary palette to white + pink and reduce/replace black styling.",
+    "User preference reiteration: avoid black backgrounds; use a white (white + pink) background aesthetic across the homepage/theme."
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-set-the-website-app-name-to-fasionbeautyhub-and-display-it-consistently-in-user-facing-ui-e-g-header-brand-and-in-browser-visible-metadata-e-g-document-title",
+      "title": "Set the website/app name to \"fasionbeautyhub\" and display it consistently in user-facing UI (e.g., header/brand) and in browser-visible metadata (e.g., document title).",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-and-apply-a-cohesive-visual-theme-for-the-site-colors-typography-spacing-and-component-styling-appropriate-for-a-fashion-beauty-hub-and-apply-it-consistently-across-the-main-layout",
+      "title": "Create and apply a cohesive visual theme for the site (colors, typography, spacing, and component styling) appropriate for a fashion/beauty hub, and apply it consistently across the main layout.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-redesign-the-homepage-ui-to-feel-modern-aesthetic-and-high-converting-in-the-style-of-top-amazon-affiliate-landing-pages-using-mobile-first-layout-gradient-backgrounds-and-fast-micro-interactions-hover-press-animations-across-key-interactive-elements",
+      "title": "Redesign the homepage UI to feel modern, aesthetic, and “high-converting” in the style of top Amazon affiliate landing pages, using mobile-first layout, gradient backgrounds, and fast micro-interactions (hover/press animations) across key interactive elements.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-user-facing-dark-mode-toggle-to-the-site-header-that-switches-the-tailwind-dark-theme-class-and-persists-the-user-s-preference-across-reloads",
+      "title": "Add a user-facing dark mode toggle to the site header that switches the Tailwind dark theme class and persists the user’s preference across reloads.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-site-typography-to-use-a-clean-sans-serif-font-poppins-or-montserrat-across-the-homepage-ensuring-headings-and-body-copy-are-consistent-with-the-new-affiliate-style-design",
+      "title": "Update the site typography to use a clean sans-serif font (Poppins or Montserrat) across the homepage, ensuring headings and body copy are consistent with the new affiliate-style design.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-homepage-content-and-components-to-focus-on-a-kitchen-gadgets-niche-and-present-products-in-an-amazon-style-grid-with-1-high-quality-placeholder-product-images-2-visible-star-ratings-3-glowing-high-emphasis-cta-buttons-and-4-urgency-messaging-including-the-exact-phrase-limited-stock-all-user-facing-text-must-remain-in-english",
+      "title": "Update homepage content and components to focus on a kitchen gadgets niche and present products in an Amazon-style grid with (1) high-quality placeholder product images, (2) visible star ratings, (3) glowing/high-emphasis CTA buttons, and (4) urgency messaging including the exact phrase “Limited Stock!”. All user-facing text must remain in English.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-and-use-generated-static-kitchen-gadget-product-images-as-local-assets-do-not-fetch-images-from-amazon-or-external-urls-at-runtime-update-product-cards-hero-visuals-to-display-these-assets-appropriately-on-mobile-and-desktop",
+      "title": "Add and use generated static kitchen gadget product images as local assets (do not fetch images from Amazon or external URLs at runtime). Update product cards/hero visuals to display these assets appropriately on mobile and desktop.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-remaining-kitchenhub-kitchen-gadgets-branding-and-copy-across-the-ui-with-fasionbeautyhub-fashion-clothes-branding-keep-all-user-facing-text-in-english-this-includes-updating-any-visible-brand-names-headings-descriptions-and-metadata-currently-referencing-kitchenhub-or-kitchen-gadgets",
+      "title": "Replace remaining KitchenHub/kitchen-gadgets branding and copy across the UI with fasionbeautyhub fashion & clothes branding (keep all user-facing text in English). This includes updating any visible brand names, headings, descriptions, and metadata currently referencing \"KitchenHub\" or kitchen gadgets.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-homepage-sections-to-focus-on-fashion-and-clothes-instead-of-kitchen-gadgets-while-keeping-the-existing-modern-affiliate-landing-page-layout-style-gradients-animations-glowing-ctas-intact-specifically-update-1-hero-section-headline-subheadline-ctas-2-categories-grid-titles-descriptions-icons-and-3-trending-products-grid-items-names-categories-alt-text-badges-and-cta-label-if-needed-to-reflect-fashion-clothing-products",
+      "title": "Update the homepage sections to focus on fashion and clothes instead of kitchen gadgets, while keeping the existing modern affiliate-landing-page layout style (gradients, animations, glowing CTAs) intact. Specifically update: (1) Hero section headline/subheadline/CTAs, (2) Categories grid titles/descriptions/icons, and (3) Trending products grid items (names, categories, alt text, badges, and CTA label if needed) to reflect fashion/clothing products.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-and-use-new-generated-static-fashion-clothing-images-as-local-assets-do-not-fetch-images-from-external-urls-at-runtime-and-update-the-hero-background-and-trending-product-cards-to-reference-these-new-assets-instead-of-the-existing-kitchen-images",
+      "title": "Add and use new generated static fashion/clothing images as local assets (do not fetch images from external URLs at runtime) and update the Hero background and Trending product cards to reference these new assets instead of the existing kitchen images.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-expand-the-homepage-content-so-the-site-supports-makeup-beauty-in-addition-to-fashion-clothes-by-updating-user-facing-copy-and-lists-across-the-header-navigation-hero-categories-trending-products-newsletter-and-footer-to-include-makeup-beauty-offerings-keep-all-user-facing-text-in-english",
+      "title": "Expand the homepage content so the site supports makeup/beauty in addition to fashion/clothes by updating user-facing copy and lists across the header navigation, hero, categories, trending products, newsletter, and footer to include makeup/beauty offerings (keep all user-facing text in English).",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-site-visual-theme-to-a-white-pink-palette-and-replace-black-dark-looking-elements-backgrounds-borders-accents-gradients-with-white-pink-equivalents-while-keeping-the-existing-modern-high-converting-layout-style-gradients-and-micro-interactions-intact",
+      "title": "Update the site visual theme to a white + pink palette and replace black/dark-looking elements (backgrounds, borders, accents, gradients) with white/pink equivalents while keeping the existing modern, high-converting layout style, gradients, and micro-interactions intact.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-new-locally-bundled-static-makeup-beauty-images-under-frontend-public-assets-generated-and-update-the-homepage-hero-background-and-trending-product-cards-to-reference-these-local-assets-no-external-image-urls-at-runtime",
+      "title": "Add new locally bundled static makeup/beauty images under frontend/public/assets/generated and update the homepage (hero background and trending product cards) to reference these local assets (no external image URLs at runtime).",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-make-the-site-load-with-a-white-light-background-by-default-not-a-black-dark-background-regardless-of-the-user-s-os-system-color-scheme-while-keeping-the-existing-white-pink-aesthetic-intact",
+      "title": "Make the site load with a white/light background by default (not a black/dark background), regardless of the user’s OS/system color scheme, while keeping the existing white + pink aesthetic intact.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Redesign homepage to be modern, aesthetic, and high-converting (Amazon affiliate-style) with mobile-first layout, gradient backgrounds, fast animations, and glowing CTA buttons.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Add dark mode option/toggle for the homepage/site theme.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Use a clean sans-serif font (Poppins or Montserrat) across the homepage styling.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Add Amazon-style product sections/cards with placeholder high-quality product images for a kitchen gadgets niche, including star ratings and urgency labels like \"Limited Stock!\".",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Replace/remove the current kitchenhub/kitchen-gadgets homepage content and update sections/products to focus on fashion and clothes (fashion/cloths niche).",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Expand homepage content/niche to include beauty/makeup site content in addition to fashion/clothes (copy, sections, categories/products as needed).",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Update the site visual theme/color palette to white and pink, replacing black elements (e.g., backgrounds, text, accents) while keeping the modern high-converting style.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Audit and remove/replace any hard-coded dark/black background classes in homepage components so that light mode consistently uses the Tailwind theme tokens (e.g., bg-background, bg-card, muted variants) rather than black/dark colors.",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "fasionbeautyhub",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

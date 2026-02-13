@@ -1,0 +1,36 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-13T09:29:11.507Z",
+  "summary": "Changes ensure the theme defaults to \"light\" on fresh visits (including pre-hydration) and still persists user-selected theme via localStorage. However, there is no evidence in the diff that homepage components were audited/updated to remove hard-coded dark/black background classes, nor that all main homepage sections are guaranteed to avoid black/near-black backgrounds in the default theme.",
+  "missing_requirements": [
+    {
+      "id": "REQ-15",
+      "requirement": "Audit and remove/replace any hard-coded dark/black background classes in homepage components so that light mode consistently uses Tailwind theme tokens (e.g., bg-background, bg-card, muted variants) rather than black/dark colors.",
+      "reason": "The diff only modifies theme initialization/state management and does not show any edits to homepage components (Header, Hero, Categories, Trending, Newsletter, Footer) to remove/replace hard-coded black/dark background utilities.",
+      "evidence": [
+        "frontend/src/hooks/useTheme.ts",
+        "frontend/index.html",
+        "frontend-file-summaries.txt"
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "requirement": "The top-level page background and all main sections (Header, Hero, Categories, Trending, Newsletter, Footer) do not render with a black/near-black background in the default theme.",
+      "reason": "While theme defaulting to light is implemented, the diff provides no component/style changes demonstrating that the homepage sections/background classes themselves are not hard-coded to black/near-black when in light/default mode.",
+      "evidence": [
+        "frontend/src/hooks/useTheme.ts",
+        "frontend/index.html",
+        "frontend-file-summaries.txt"
+      ]
+    }
+  ],
+  "hallucinated_features": [],
+  "confidence": 0.66,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/index.html",
+    "frontend/src/hooks/useTheme.ts",
+    "project_state.json"
+  ]
+}

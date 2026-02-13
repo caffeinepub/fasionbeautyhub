@@ -1,0 +1,79 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Force light/white default theme regardless of OS dark mode while preserving pink aesthetic",
+  "requirements": [
+    {
+      "id": "REQ-14",
+      "summary": "Default the site to a light/white theme on first visit (no saved preference), independent of OS color scheme, while preserving existing theme persistence and aesthetics.",
+      "acceptanceCriteria": [
+        "On a fresh visit (no existing theme in localStorage), the homepage background renders as a light/white theme even if the device OS is set to dark mode.",
+        "The top-level page background and all main sections (Header, Hero, Categories, Trending, Newsletter, Footer) do not render with a black/near-black background in the default theme.",
+        "The theme preference persists as before (if a user explicitly toggles theme, that preference is respected on reload).",
+        "No user-facing text is changed away from English as part of this update."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/hooks/useTheme.ts",
+          "operation": "modify",
+          "description": "Change the initial theme selection so that when no theme is stored, the default is 'light' (not 'system'), while preserving existing persistence behavior when a theme value exists in localStorage."
+        },
+        {
+          "path": "frontend/index.html",
+          "operation": "modify",
+          "description": "Ensure the initial document renders with a light background by default before React hydration (e.g., set an initial light class on the root element and/or a tiny pre-hydration theme initializer that respects an existing stored preference)."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Verify base styles enforce a light background in the default (non-.dark) theme via existing Tailwind theme tokens/CSS variables, and ensure any pre-hydration state still renders a white/light background."
+        }
+      ]
+    },
+    {
+      "id": "REQ-15",
+      "summary": "Audit homepage sections and replace any hard-coded dark/black backgrounds with Tailwind theme tokens so light mode stays consistently white with pink accents.",
+      "acceptanceCriteria": [
+        "A code search finds no use of hard-coded black/dark background utility classes (e.g., bg-black, bg-zinc-900, bg-neutral-950) in the homepage components that would affect the default (light) appearance.",
+        "Light mode backgrounds across the homepage visually read as white with soft pink accents, consistent with the existing CSS variable theme tokens."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Confirm the top-level wrapper uses theme tokens for background (e.g., bg-background) and adjust if any non-token/dark background styling is present so the default (light) appearance is consistently white."
+        },
+        {
+          "path": "frontend/src/components/Header.tsx",
+          "operation": "modify",
+          "description": "Audit for any hard-coded dark/black backgrounds and ensure the header surface uses Tailwind theme tokens (bg-background/bg-card/muted variants) in light mode rather than dark color utilities."
+        },
+        {
+          "path": "frontend/src/components/Hero.tsx",
+          "operation": "modify",
+          "description": "Audit hero gradients/overlays for any hard-coded dark/black backgrounds and ensure overlays/surfaces use Tailwind theme tokens (bg-background, muted variants) to keep light mode white with soft pink accents."
+        },
+        {
+          "path": "frontend/src/components/Categories.tsx",
+          "operation": "modify",
+          "description": "Audit category card background utilities to ensure light mode uses light token-aligned surfaces (or light pink gradients) and does not rely on hard-coded dark/black background classes."
+        },
+        {
+          "path": "frontend/src/components/TrendingSection.tsx",
+          "operation": "modify",
+          "description": "Audit the section background and card/media container backgrounds to ensure they are derived from Tailwind theme tokens (bg-background/bg-muted/bg-card) rather than hard-coded dark/black utilities that could impact light mode."
+        },
+        {
+          "path": "frontend/src/components/Newsletter.tsx",
+          "operation": "modify",
+          "description": "Audit newsletter panel backgrounds/borders to ensure they remain light in default theme and rely on Tailwind theme tokens/soft pink accents instead of any hard-coded dark/black background utilities."
+        },
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "modify",
+          "description": "Audit footer background and dividers to ensure they use Tailwind theme tokens (bg-muted/bg-background and border tokens) and remove/replace any hard-coded dark/black background utilities if present."
+        }
+      ]
+    }
+  ]
+}
